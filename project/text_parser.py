@@ -3,6 +3,7 @@ class TextParser:
         import os,sys
 
     def read_file(self, filename):
-        filehandle = open(filename)
-        print(filehandle.read())
-        filehandle.close()
+        file_reader = open(filename)
+        file_text=file_reader.read()
+        file_reader.close()
+        return file_text
